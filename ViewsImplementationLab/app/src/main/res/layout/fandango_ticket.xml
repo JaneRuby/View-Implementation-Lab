@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:color/black"/>
+
+        <ImageView
+            android:id="@+id/ticket"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="12dp"
+            android:layout_centerInParent="true"
+            android:src="@android:color/holo_orange_dark"/>
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Your Cinematic Masterpiece \starts in:"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_above="@+id/ticket"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="23:14"
+            android:gravity="center"
+            android:layout_alignTop="@+id/ticket"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="60sp"/>
+
+        <TextView
+            android:id="@+id/seeMyTickets"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="SEE MY TICKETS"
+            android:layout_marginBottom="6dp"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@android:color/black"
+            android:layout_alignBottom="@+id/ticket"/>
+
+        <TextView
+            android:id="@+id/fassbinder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Love is Colder than Death"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_below="@+id/ticket"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/runningTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Running Time:  1 hr 28 min"
+            android:textColor="#dddddd"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_below="@+id/fassbinder"/>
+
+        <TextView
+            android:id="@+id/moma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MoMA Film Series"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="4dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_below="@+id/runningTime"/>
+
+
+    </RelativeLayout>
